@@ -91,60 +91,66 @@ ___
 ___
 
 ## Solidity 
-The Contract-Oriented programming language - [Source Code](https://github.com/ethereum/solidity)
-- Ethereum Virtual Machine (EVM)
-> The virtual machine that forms the key part of the execution model for an Account’s associated EVM Code
->
-> - [The Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf)
+A Contract-Oriented programming language for the Ethereum Virtual Machine 
+
+- [Source Code](https://github.com/ethereum/solidity)
 
 
-  Ethereum Runtime Environment: (aka ERE) The environment which is provided to an Autonomous Object
-executing in the EVM. Includes the EVM but also the structure of the world state on which the EVM relies for
-certain I/O instructions including CALL & CREATE
-https://ethereum.github.io/yellowpaper/paper.pdf
-  - Debugger: The Remix Web Browser IDE ( link )
-- VSCode + Solidity extension (https://github.com/juanfranblanco/vscode-solidity)
+- [The Ethereum Yellow Paper / Technical Paper](https://ethereum.github.io/yellowpaper/paper.pdf)
 
 
+[The Remix Web Browser IDE](https://remix.ethereum.org/)
 
+[Solidity language support for VSCode](https://github.com/juanfranblanco/vscode-solidity)
 
-##Truffle ( link )
- Development environment, testing framework and asset pipeline for Ethereum.
+---
 
-- how it talks to the network
-- stages: 
-    compilation (compile the code to an executable) `yarn compile`
-    migration (why migration?) `yarn migrate`
-    deployment `yarn deploy`
+###############
+## Web3.js
+Ethereum Javascript API to interact with a local or remote ethereum node.
+[Docs](https://web3js.readthedocs.io/en/1.0/)
+[Wiki]()
+[Source Code]()
 
-# Networks
-
-- Local
-- - Ganache-cli, TestRPC and ??
-- Test:  
-    Ropsten - (POW)
-    Kovan - (POA)
-    Rinkeby - (POA)
-(screenshot of metamask)
-- Live: Main 
-
-Disclaimer: Make sure you're connected to a test network.
-
-###In details (https://medium.com/coinmonks/ethereum-test-network-21baa86072fa)
-    
-##Web3
-- communication to the blockchain (make it visual)
-communicates to a local node through RPC calls. web3 works with any Ethereum node, which exposes an RPC layer.
-
-
-
-##Metamask (https://github.com/MetaMask)
+## Metamask (https://github.com/MetaMask)
 - How Metamask uses web3
 - Create a wallet
 - keep your seeds offline.
+[Docs](https://web3js.readthedocs.io/en/1.0/)
+[Wiki]()
+[Source Code]()
 
 
-#INTRODUCTION TO THE END RESULT OF THE WORKSHOP
+## Ganache (TestRPC)
+Local blockchain network for Ethereum development.
+
+- [Source Code](https://github.com/trufflesuite/ganache)
+
+## Truffle 
+ Development environment, testing framework and a deployment management for Ethereum.
+- [Source Code](https://github.com/trufflesuite/truffle)
+ - [Docs](https://truffleframework.com/docs/truffle/overview)
+
+### Test networks
+
+Ropsten (Proof Of Work) -
+[Source code](https://github.com/ethereum/ropsten) -
+[Etherscan](https://ropsten.etherscan.io/)
+
+Kovan & Rinkeby (Proof Of Authority)
+
+[More in-depth](https://medium.com/coinmonks/ethereum-test-network-21baa86072fa)
+
+![Networks available in Metamask](/assets/networks.png)
+
+
+__Disclaimer:__ Make sure you're connected to a test network.
+---
+
+---
+
+
+# INTRODUCTION TO THE END RESULT OF THE WORKSHOP
 - What are we going to be building
 - and how do we use the tools above
 
