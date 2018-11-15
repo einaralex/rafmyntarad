@@ -48,7 +48,7 @@ ___
 
 Definitions: 
 - _Ether_
-: ETH, the computational crypto-fuel of Ethereum, can bes transferred between accounts and used to pay transaction fees.
+: ETH, the computational crypto-fuel of Ethereum, can be transferred between accounts and used to pay transaction fees.
 - _Nonce_
 : number used only once
 - _Messages_
