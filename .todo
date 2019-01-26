@@ -1,0 +1,27 @@
+
+
+README.md:
+    ☐ Fara niður listann og týna inn upplýsingar, byrja efst enda neðst
+    ☐ Láta lýsingar á projectum fyglja með sem quotes
+    ☐ Bæta við linkum
+    ☐ Bæta titla
+    ☐ Linka í QUICK GUIDE skrá, til að fara strax í deployment. (yarn this and that)
+    ☐ brjóta betur niður forritunarpart
+    ☐ búa til fleirri tösk fyrir forritunarpart
+
+SOLIDITY:
+    ☐ Decide on a smart contract example
+    ☐ Plan smart contract setup
+    ☐ Reasearch simple contracts
+    ☐ Code the smart contract
+
+TRUFFLE:
+    ☐ Create tests
+    ☐ deploy contract
+
+    ☐ Taka til í browser
+    ☐ Hreinsa desktop
+    ☐ Setja verkefnið á desktop
+
+WEB3:
+    ☐ Nota: 'truffle unbox react' ?

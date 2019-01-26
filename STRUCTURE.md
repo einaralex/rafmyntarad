@@ -184,6 +184,7 @@ SOLIDITY
 
 TEST
 - Testing that smart contract
+(hægt að testa strax, þarf ekki að breyta truffle conf og tengjast localnet)
 
 MIGRATION
 1. Modify migration/2_deploy_contracts.js

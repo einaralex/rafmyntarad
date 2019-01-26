@@ -1,0 +1,28 @@
+{
+  "name": "IBF_Warehouse",
+  "version": "0.0.1",
+  "description": "Warehouse IBF Workshop",
+  "scripts": {
+    "compile": "truffle compile",
+    "lint": "yarn solhint contracts/PokerTournament.sol",
+    "migrate": "truffle migrate",
+    "rpc": "truffle develop",
+    "start": "babel-node client/src/index.js",
+    "test": "yarn lint && truffle test",
+    "test:dev": "truffle test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "eth-gas-reporter": "^0.1.12",
+    "solhint": "^1.4.1",
+    "truffle-assertions": "^0.6.3",
+    "web3": "^1.0.0-beta.37"
+  },
+  "dependencies": {
+    "truffle": "^5.0.0-beta.1"
+  }
+}
