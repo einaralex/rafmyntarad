@@ -4,5 +4,7 @@
 - útskýra migration contract
 - RPC stillingar
 - compile & migrate
+- bæta babel við
 - test
-
+- web 3, contract address og inital uppsetning
+- web 3, communcation við contract

@@ -165,10 +165,14 @@ Types
 > Solidity is a statically typed language, which means that the type of each variable (state and local) needs to be specified. Solidity provides several elementary types which can be combined to form complex types.
 https://solidity.readthedocs.io/en/v0.5.0/types.html?highlight=mapping
 
-Address: https://solidity.readthedocs.io/en/v0.5.0/types.html?highlight=mapping
-
 ---
 
+Constant functions execute locally and return a value.
+Non-constant functions execute on the blockchain and return a transaction hex.
+
+If you’re trying to get a value out of your contract,
+you probably want a function that is constant.
+If you’re trying to update a value in your contract, you do not want a function that is constant.
 
 # INTRODUCTION TO THE END RESULT OF THE WORKSHOP
 - What are we going to be building
