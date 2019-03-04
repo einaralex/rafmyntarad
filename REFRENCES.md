@@ -1,3 +1,9 @@
+Read on loaylty points:
+https://medium.com/@Loyyal/reinventing-loyalty-96222e7c41da
+
+Mjög góður tutorial:
+https://medium.com/@ricochenx/the-complete-tutorial-on-getting-started-with-smart-contracts-on-ethereum-3ee6c54e84db
+
 https://blockgeeks.com/guides/solidity/
 
 Mimimum viable token
