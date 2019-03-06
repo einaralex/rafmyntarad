@@ -15,11 +15,12 @@ contract FrequentFlyer {
         string ssn;
         uint points;
     
+        // 7.
+        uint totalPoints;
+        
          // 5.
         Tier tier;
         
-        // 7.
-        uint totalPoints; //eh?
     }
     // 1.
     mapping(address => Client) public clientInfo;
@@ -30,7 +31,7 @@ contract FrequentFlyer {
         // 3.
         require(!isRegistered(msg.sender));
         
-        clientInfo[msg.sender] = Client(ssn, 0, /*5.*/ Tier.Bronze);
+        clientInfo[msg.sender] = Client(ssn, 0, 0, /*5.*/ Tier.Bronze);
     }
     
     // 3
@@ -46,15 +47,16 @@ contract FrequentFlyer {
         require(isRegistered(msg.sender));
         
         // 4
-        //clientInfo[msg.sender].points += points;
+        //clientInfo[msg.sender].points += points; // Remove and add the line below
         
         // 6
         clientInfo[msg.sender].points += getBonus(points);
         
         // 7 
-        clientInfo[msg.sender].totalPoints += clientInfo[msg.sender].points; // eh?
+        clientInfo[msg.sender].totalPoints += clientInfo[msg.sender].points;
         
-        
+        // 8. 
+        upgrade();
         // Last
         emit PointsEarned(points, clientInfo[msg.sender].points);
     }
@@ -67,20 +69,28 @@ contract FrequentFlyer {
         clientInfo[msg.sender].points -= points;
         
         clientInfo[reciever].points += points;
-        clientInfo[reciever].totalPoints += points; // eh?
+        clientInfo[reciever].totalPoints += points;
     }
     
     //6 
-    function getBonus(uint points) private returns (uint) {
-        if (clientInfo[msg.sender].tier == Tier.Bronze){
+    function getBonus(uint points) private view returns (uint) {
+        if (clientInfo[msg.sender].tier == Tier.Bronze) {
             points += points * 5/100;
-        }
-        else if (clientInfo[msg.sender].tier == Tier.Silver){
+        } else if (clientInfo[msg.sender].tier == Tier.Silver {
             points += points * 10/100;
-        }
-        else if (clientInfo[msg.sender].tier == Tier.Gold){
+        } else if (clientInfo[msg.sender].tier == Tier.Gold) {
             points += points * 15/100;
         }
         return points;
+    }
+    
+    // 8.
+    function upgrade() private {
+        if (clientInfo[msg.sender].tier == Tier.Bronze && clientInfo[msg.sender].totalPoints > 500000) {
+            clientInfo[msg.sender].tier = Tier.Silver;
+        }
+        if (clientInfo[msg.sender].tier == Tier.Silver && clientInfo[msg.sender].totalPoints > 1000000) {
+            clientInfo[msg.sender].tier = Tier.Gold;
+        }
     }
 }
